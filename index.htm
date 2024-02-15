@@ -61,12 +61,20 @@
     margin-top: 12px;
 }
 
+
 .content__sert {
-    display: flex;
-    flex-wrap: wrap;
     gap: 32px;
     margin-bottom: 72px;
+
+      display: grid;
+    grid-template-columns: 1fr 1fr;
 }
+
+img.logo {
+    width: 50px;
+}
+
+
 
 .content__sert-block {
     
@@ -109,9 +117,10 @@ padding: 72px 0;
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
 
-
-  
+.logo-phone {
+    display: none;
 }
 
 .swiper-slide-comment {
@@ -131,6 +140,11 @@ padding: 72px 0;
     line-height: 41px;
 }
 
+
+.content__sert {
+        display: grid;
+    grid-template-columns: 1fr;
+}
 
 
     .swiper-slide p {
@@ -199,6 +213,10 @@ padding: 72px 0;
 .grid-3 {
      margin-bottom: 0; 
 }
+
+.logo-phone {
+    display: block;
+}
 }
 
     </style>
@@ -208,7 +226,12 @@ padding: 72px 0;
     <div class="section">
         <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="navbar-2 w-nav">
             <div class="container-nav w-container">
+                <a href="#!" class="logo-phone">
+                    <img src="./img/logo.svg" class="logo" alt="">
+                </a>
+
                 <nav role="navigation" class="nav-menu-2 w-nav-menu">
+                    <img src="./img/logo.svg" class="logo" alt="">
                     <div class="div-block-29"><a href="#about" class="nav-link w-nav-link" style="max-width: 1360px;">О нас</a><a href="#servises" class="nav-link w-nav-link" style="max-width: 1360px;">Услуги</a><a href="#benefits" class="nav-link w-nav-link" style="max-width: 1360px;">Преимущества</a><a href="#stages" class="nav-link w-nav-link" style="max-width: 1360px;">Этапы оформления документов</a><a href="#faq" class="nav-link w-nav-link w--current" style="max-width: 1360px;">Вопросы</a></div><a href="#form" class="button header w-button w--current">Связаться</a>
                 </nav>
                 <div class="menu-button-2 w-nav-button" style="-webkit-user-select: text;" aria-label="menu" role="button" tabindex="0" aria-controls="w-nav-overlay-0" aria-haspopup="menu" aria-expanded="false">
@@ -361,7 +384,7 @@ padding: 72px 0;
                                 </div>
                                 <nav class="dropdown-list-2 w-dropdown-list" id="w-dropdown-list-0" aria-labelledby="w-dropdown-toggle-0">
                                     <div class="ans">
-                                        <p class="paragraph-7">Цена зависит от выбора вакансии и страны. Наше агентство «BEDGAR». У нас более 10 лет успешного опыта. Наши офисы находятся в Польше и в Украине. При необходимости документы можно оформить лично при встрече. Так же у нас есть сертификатамы и комментариями довольных наших клиентов.</p>
+                                        <p class="paragraph-7">Цена зависит от выбора вакансии и страны. Наше агентство «BAGDER». У нас более 10 лет успешного опыта. Наши офисы находятся в Польше и в Украине. При необходимости документы можно оформить лично при встрече. Так же у нас есть сертификаты и комментариями довольных наших клиентов.</p>
                                     </div>
                                 </nav>
                             </div>
@@ -382,7 +405,6 @@ padding: 72px 0;
                                             <li>Молдавия</li>
                                             <li>Россия</li>
                                             <li>Таджикистан</li>
-                                            <li>Туркменистан</li>
                                             <li>Узбекистан</li>
                                             <li>Туркменистан</li>
                                             <li>Грузия</li>
